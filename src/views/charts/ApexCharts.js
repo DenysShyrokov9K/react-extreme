@@ -5,7 +5,7 @@ import BreadCrumbs from '../../layouts/breadcrumbs/BreadCrumbs';
 
 import ComponentCard from '../../components/ComponentCard';
 
-function generateData(baseval, count, yrange) {
+function generateData(baseval , count , yrange ) {
   let i = 0;
   const series = [];
   while (i < count) {
@@ -20,7 +20,7 @@ function generateData(baseval, count, yrange) {
   return series;
 }
 
-function generateDataHeatMap(count, yrange) {
+function generateDataHeatMap(count , yrange ) {
   let i = 0;
   const series = [];
   while (i < count) {
@@ -1195,7 +1195,7 @@ const Apexcharts = () => {
       <Row>
         <Col md="6">
           <ComponentCard title="Basic Line chart">
-            <Chart options={optionsbasicline} series={seriesbasicline} type="line" height="300" />
+            <Chart options={optionsbasicline } series={seriesbasicline} type="line" height="300" />
           </ComponentCard>
         </Col>
         <Col md="6">
@@ -1220,17 +1220,17 @@ const Apexcharts = () => {
         </Col>
         <Col md="6">
           <ComponentCard title="Area Chart">
-            <Chart options={optionsarea} series={seriesarea} type="area" height="280" />
+            <Chart options={optionsarea } series={seriesarea} type="area" height="280" />
           </ComponentCard>
         </Col>
         <Col md="6">
           <ComponentCard title="Line Chart">
-            <Chart options={optionsline} series={seriesline} type="line" height="280" />
+            <Chart options={optionsline } series={seriesline} type="line" height="280" />
           </ComponentCard>
         </Col>
         <Col md="6">
           <ComponentCard title="Column Chart">
-            <Chart options={optionscolumn} series={seriescolumn} type="bar" height="280" />
+            <Chart options={optionscolumn } series={seriescolumn} type="bar" height="280" />
           </ComponentCard>
         </Col>
         <Col md="6">
@@ -1240,13 +1240,13 @@ const Apexcharts = () => {
         </Col>
         <Col md="12">
           <ComponentCard title="Mixed Chart">
-            <Chart options={optionsmix} series={seriesmix} type="line" height="350" />
+            <Chart options={optionsmix } series={seriesmix} type="line" height="350" />
           </ComponentCard>
         </Col>
         <Col md="12">
           <ComponentCard title="Candlestick Chart">
             <Chart
-              options={optionscandlestick}
+              options={optionscandlestick }
               series={seriescandlestick}
               type="candlestick"
               height="350"
